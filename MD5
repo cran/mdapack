@@ -1,0 +1,12 @@
+670d3a84134b6fc43fde6998a2a048d3 *DESCRIPTION
+c5071c2ab94307dcec315263d2201c74 *LICENSE
+2c849b4204bd7f281b1dcce13acab3f8 *NAMESPACE
+e3ae704c9ec5c915bb80a0ba7a5d0623 *R/plotHeatmapGroup.R
+3d458ff4bb73bfeaa414e46dfa8881ef *R/univariateAnalysis.R
+27f58166fa73e0d9d4487a77a496c3c7 *README.md
+e12ac3c13b02d10f4d15a2fe6a9a28ff *build/vignette.rds
+35b55029a6e309ddb0a5629310e97624 *inst/doc/Introduction.Rmd
+6d7ed329bdba465a5ed6c460ce2710ae *inst/doc/Introduction.html
+75d79ecec8e5909e888aa9712a266177 *man/plotHeatmapGroup.Rd
+d75d5811c17a3a49491ae57ebe329770 *man/univariateAnalysis.Rd
+35b55029a6e309ddb0a5629310e97624 *vignettes/Introduction.Rmd
