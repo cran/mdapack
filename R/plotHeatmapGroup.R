@@ -1,18 +1,17 @@
-#' A plotHeatmapGroup function for numeric variables
+#' A plotHeatmapGroup Function
 #'
-#' 'plotHeatmapGroup' returns a plot showing the strength of correlation of numeric variables in a data frame.
-#'  The function receives just one input as data frame.
+#' This function plots a heatmap of aall numerical variables in data frame to show the correlation.
 #'
-#' @param dat Data in data frame format.
-#' @param ... Optional arguments
-#' @author Henry  Nanji,Saisakul Chernbumroong
-#' @return A heatmap is returned showing correlation of all numeric variables in data frame
+#' @param dat data in  data.frame format.
+#' @author Saisakul Chernbumroong, Henry  Nanji
 #' @keywords heatmap
 #' @export
 #' @examples
 #' data(iris)
 #'plotHeatmapGroup(iris[,1:4])
-plotHeatmapGroup = function(dat,...)
+plotHeatmapGroup = function(dat)
+
+
 
   {
 
@@ -22,13 +21,13 @@ plotHeatmapGroup = function(dat,...)
 
       {
 
+
         dat <- dat[,1:4]
         cor <- reshape2::melt(cor(dat, use="p"))
 
-        heatmap1 <- ggplot2::ggplot(data=cor, ggplot2::aes(x=cor[,1], y=cor[,2], fill=cor[,3]))
-        heatmap2 <-heatmap1 + ggplot2::geom_tile() + ggplot2::labs(x = "", y = "") + ggplot2::scale_fill_gradient2(limits=c(-1, 1))
+        heat <- ggplot2::ggplot(data=cor, ggplot2::aes(x=cor[,1], y=cor[,2], fill=cor[,3]))
+        heat + ggplot2::geom_tile() + ggplot2::labs(x = "", y = "") + ggplot2::scale_fill_gradient2(limits=c(-1, 1))
 
-        return(heatmap2)
 
       }
 

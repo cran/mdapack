@@ -9,4 +9,11 @@ vignette: >
 The following functions have been include in this package
 UnivariateAnalysis
 plotheatmapGroup
-
+boxplotGroup
+checkValidity
+checkVariableNames
+correctType
+discritize
+mutuallnfo
+outlier_detection
+missingAnalysis

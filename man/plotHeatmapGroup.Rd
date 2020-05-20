@@ -2,27 +2,21 @@
 % Please edit documentation in R/plotHeatmapGroup.R
 \name{plotHeatmapGroup}
 \alias{plotHeatmapGroup}
-\title{A plotHeatmapGroup function for numeric variables}
+\title{A plotHeatmapGroup Function}
 \usage{
-plotHeatmapGroup(dat, ...)
+plotHeatmapGroup(dat)
 }
 \arguments{
-\item{dat}{Data in data frame format.}
-
-\item{...}{Optional arguments}
-}
-\value{
-A heatmap is returned showing correlation of all numeric variables in data frame
+\item{dat}{data in  data.frame format.}
 }
 \description{
-'plotHeatmapGroup' returns a plot showing the strength of correlation of numeric variables in a data frame.
- The function receives just one input as data frame.
+This function plots a heatmap of aall numerical variables in data frame to show the correlation.
 }
 \examples{
 data(iris)
 plotHeatmapGroup(iris[,1:4])
 }
 \author{
-Henry  Nanji,Saisakul Chernbumroong
+Saisakul Chernbumroong, Henry  Nanji
 }
 \keyword{heatmap}

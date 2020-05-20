@@ -13,29 +13,29 @@ univariateAnalysis(
 )
 }
 \arguments{
-\item{dat}{Data in data frame format.}
+\item{dat}{data in data.frame format}
 
-\item{hist}{A plot of histogram}
+\item{hist}{a plot of histogram}
 
-\item{boxplot}{A box plot showing distribution of the variable}
+\item{boxplot}{a box plot showing distribution of the variable}
 
-\item{qqnorm}{A qnantile quantile plot}
+\item{qqnorm}{a qnantile quantile plot}
 
-\item{shapiro}{A  Shapiro-Wilk normality test.}
+\item{shapiro}{a  Shapiro-Wilk normality test.}
 }
 \value{
-Returns either a historgram, box-plot, q-q plot or Shapiro-Wilk statistic .
+Return plots from univariate analysis.
 }
 \description{
-'univariateAnalysis' produces univariate plots such as histogram, box plot and  q-q plot. It also calculates
+This function produces univariate plots including histogram with density plot, box plot, q-q plot, and calculate
 the Shapiro-Wilk statistic for numeric data.
 }
 \examples{
 data(iris)
-univariateAnalysis (iris[,-5], qqnorm  = TRUE)
+univariateAnalysis (iris, qqnorm  = TRUE)
 }
 \author{
-Henry  Nanji, Saisakul Chernbumroong
+Saisakul Chernbumroong, Henry  Nanji
 }
 \keyword{analysis}
 \keyword{univariate}
